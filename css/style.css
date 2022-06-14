@@ -797,10 +797,24 @@ max-width: 357px;
 color: #CACACA;
 }
 
+
+
+
+
+
 /*media*/
 
 
- @media screen and (min-width: 1024px) and (max-width: 1518px){
+ @media screen and (min-width: 990px) and (max-width: 1518px){
+
+  .header {
+    position: fixed;
+    top: 0;
+    z-index: 100;
+    width: 100%;
+}
+
+
   .container{
     width: 924px;
   }
@@ -881,20 +895,31 @@ color: #CACACA;
 }
   .hamburger-icon{
     display: block;
+    z-index: 11;
   }
 
   .header__list{
     display: none;
+    padding-left: 45px;
+    padding-left: 45px;
+    background-color: white;
+    opacity: 0.8;
+    border-radius: 15px;
   }
 
   .header__items{
     float: none;
+    margin-bottom: 15px;
   }
 
   .header__list{
     display: none;
+    position: absolute;
   }
 
+  .header__items_text {
+    color: #000000;
+  }
 
   .swiper{
     display: none;
@@ -1036,7 +1061,38 @@ color: #CACACA;
 
   /*---------------*/
 
-@media screen and (min-width: 320px) and (max-width: 1023px){
+@media screen and (min-width: 320px) and (max-width: 990px){
+
+
+
+  .hamburger{
+    width: 30px;
+    height: 4px;
+    transform: translate(-50%,-50%);
+    transition: 0.5s;
+    display: inline-block;
+    background:#333333;
+    margin-left: 17px;
+  }
+
+  .hamburger:before,
+  .hamburger::after {
+    content: "";
+    width: 30px;
+    height: 4px;
+    position: absolute;
+    background: #333333 ;
+    transition: .5s;
+  }
+
+  .hamburger:before{
+    top: -10px;
+  }
+
+  .hamburger:after{
+    top: 10px;
+  }
+
 
   h2{
     font-size: 24px;
@@ -1048,10 +1104,14 @@ color: #CACACA;
 
   .header__container{
     align-items: center;
+    padding-bottom: 0;
   }
 
   .header__left{
-    margin-left: 58px;
+    position: absolute;
+    right: 440px;
+    top: 7px;
+    padding: 0;
   }
 
   .header__right{
@@ -1064,8 +1124,16 @@ color: #CACACA;
   }
 
   .header__list{
-    display: none;
+    opacity: 0.96;
+    height: 265px;
+    top: -2px;
   }
+
+  .header__items {
+    float: none;
+    margin-bottom: 15px;
+    padding-top: 20px;
+}
 
   .swiper{
     display: none;
@@ -1073,7 +1141,7 @@ color: #CACACA;
 
   .hero__container{
     display: block;
-    background-image: url(../img/low-angle-photo-of-balconies-2462015\ 1\ —\ копия.jpg);
+    background-image: url(../img/low-angle-photo-of-balconiesкопия.jpg);
     background-size: cover;
     padding: 60px 21px;
     margin-bottom: 61px;
