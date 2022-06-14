@@ -800,7 +800,7 @@ color: #CACACA;
 /*media*/
 
 
-@media screen and (min-width: 1024px) and (max-width: 1518px){
+ @media screen and (min-width: 1024px) and (max-width: 1518px){
   .container{
     width: 924px;
   }
@@ -891,9 +891,9 @@ color: #CACACA;
     float: none;
   }
 
-  /*.header__list{
+  .header__list{
     display: none;
-  }*/
+  }
 
 
   .swiper{
@@ -903,7 +903,7 @@ color: #CACACA;
 
   .hero__container{
     display: block;
-    background-image: url(../img/low-angle-photo-of-balconies-2462015\ 1\ —\ копия.jpg);
+    background-image: url(../img/low-angle-photo-of-balconiesкопия.jpg);
     background-size: cover;
     padding: 160px 77px;
     margin-bottom: 80px;
@@ -1030,7 +1030,9 @@ color: #CACACA;
     width: 543px;
   }
 
-  }
+}
+
+
 
   /*---------------*/
 
